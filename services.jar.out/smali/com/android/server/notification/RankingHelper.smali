@@ -1844,6 +1844,7 @@
     int-to-long v8, v7
 
     iput-wide v8, v3, Lcom/android/server/notification/RankingHelper$Record;->soundTimeout:J
+    invoke-direct {p0, p1, v3}, Lcom/android/server/notification/RankingHelper;->readFlymeExtraFields(Lorg/xmlpull/v1/XmlPullParser;Lcom/android/server/notification/RankingHelper$Record;)V
 
     goto/16 :goto_0
 
@@ -2568,6 +2569,7 @@
 
     .line 229
     :cond_7
+    invoke-direct {p0, p1, v3}, Lcom/android/server/notification/RankingHelper;->writeFlymeExtraFields(Lorg/xmlpull/v1/XmlSerializer;Lcom/android/server/notification/RankingHelper$Record;)V
     const-string/jumbo v4, "package"
 
     const/4 v5, 0x0
